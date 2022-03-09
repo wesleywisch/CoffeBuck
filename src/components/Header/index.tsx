@@ -18,7 +18,7 @@ export function Header({ toggle }: HeaderProps) {
     <HeaderContainer>
       <HeaderLogo>
         <Link href='/'>
-          <h1>CoffeBuck</h1>
+          <h1>CoffeeBuck</h1>
         </Link>
       </HeaderLogo>
 

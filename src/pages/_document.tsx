@@ -40,10 +40,10 @@ export default class MyDocument extends Document {
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet" />
 
-        <meta name='application-name' content='CoffeBuck' />
+        <meta name='application-name' content='CoffeeBuck' />
         <meta name='apple-mobile-web-app-capable' content='yes' />
         <meta name='apple-mobile-web-app-status-bar-style' content='default' />
-        <meta name='apple-mobile-web-app-title' content='CoffeBuck' />
+        <meta name='apple-mobile-web-app-title' content='CoffeeBuck' />
         <meta name='description' content='Aqui você encontra os melhores cafés e de altíssima qualidade' />
         <meta name='format-detection' content='telephone=no' />
         <meta name='mobile-web-app-capable' content='yes' />
@@ -52,11 +52,11 @@ export default class MyDocument extends Document {
                 
         <link rel='apple-touch-icon' href='/favicon-32x32.png' />
 
-        <meta property="og:title" content="CoffeBuck - Aqui você encontra os melhores cafés e de altíssima qualidade" />
+        <meta property="og:title" content="CoffeeBuck - Aqui você encontra os melhores cafés e de altíssima qualidade" />
         <meta property="og:description" content="Aqui você encontra os melhores cafés e de altíssima qualidade" />
         <meta property="og:locale" content="pt_BR" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="CoffeBuck - Aqui você encontra os melhores cafés e de altíssima qualidade" />
+        <meta property="og:site_name" content="CoffeeBuck - Aqui você encontra os melhores cafés e de altíssima qualidade" />
         <meta property="og:image" content="/ogimage.jpg" />
         <meta property="og:image:secure_url" content="/ogimage.jpg" />
         <meta property="og:image:alt" content="Thumbnail" />
@@ -64,7 +64,7 @@ export default class MyDocument extends Document {
         <meta property="og:image:width" content="900" />
         <meta property="og:image:height" content="600" />
 
-        <meta name="twitter:title" content="CoffeBuck - Aqui você encontra os melhores cafés e de altíssima qualidade" />
+        <meta name="twitter:title" content="CoffeeBuck - Aqui você encontra os melhores cafés e de altíssima qualidade" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content="/ogimage.jpg" />
         <meta name="twitter:image:src" content="/ogimage.jpg" />
