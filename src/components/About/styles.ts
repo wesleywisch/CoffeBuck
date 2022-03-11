@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const AboutContainer = styled.section`
   width: 100%;
   height: 100%;
-  background: #f8f8f8;
+  background: #f5f5f5;
   padding: 3rem 0;
 `;
 
@@ -23,6 +23,22 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
 
+  @media(max-width: 1570px) {
+    grid-template-columns: 1fr;
+
+    >div.img {
+      order: 0;
+    }
+
+    > div.CardRight {
+      order: 1;
+    }
+
+    > div.CardLeft {
+      order: 2;
+    }
+  }
+
   @media(max-width:1450px) {
     max-width: 80rem;
   }
@@ -39,6 +55,11 @@ export const Container = styled.div`
     width: 450px;
     height: 450px;
     margin: 3rem auto;
+
+    @media screen and (max-width: 500px) {
+      width: 250px;
+      height: 250px;
+    }
   }
 
   >div.CardRight {
@@ -46,6 +67,13 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: flex-end;
     gap: 4rem;
+
+    @media(max-width: 1570px) {
+      gap: 2rem;
+      margin-bottom: 2rem;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   >div.CardLeft {
@@ -53,5 +81,11 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: flex-start;
     gap: 4rem;
+
+    @media(max-width: 1570px) {
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+    }
   }
 `;

@@ -1,6 +1,10 @@
 import { CardAbout } from '../resuables/CardAbout';
 
 import { CgCoffee } from 'react-icons/cg';
+import { GiCoffeePot, GiCoffeeBeans } from 'react-icons/gi';
+import { MdCoffeeMaker } from 'react-icons/md';
+import { SiCoffeescript } from 'react-icons/si';
+import { BiCoffeeTogo } from 'react-icons/bi';
 
 import { AboutContainer, Title, Container } from './styles';
 
@@ -20,7 +24,7 @@ export function About() {
           />
 
           <CardAbout
-            icon={<CgCoffee />}
+            icon={<GiCoffeePot />}
             title='The Perfect Coffee'
             description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, magni!'
             align='right'
@@ -28,7 +32,7 @@ export function About() {
           />
 
           <CardAbout
-            icon={<CgCoffee />}
+            icon={<MdCoffeeMaker />}
             title='The Perfect Coffee'
             description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, magni!'
             align='right'
@@ -42,7 +46,7 @@ export function About() {
 
         <div className='CardLeft'>
           <CardAbout
-            icon={<CgCoffee />}
+            icon={<GiCoffeeBeans />}
             title='The Perfect Coffee'
             description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, magni!'
             align='left'
@@ -50,7 +54,7 @@ export function About() {
           />
 
           <CardAbout
-            icon={<CgCoffee />}
+            icon={<SiCoffeescript />}
             title='The Perfect Coffee'
             description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, magni!'
             align='left'
@@ -58,7 +62,7 @@ export function About() {
           />
 
           <CardAbout
-            icon={<CgCoffee />}
+            icon={<BiCoffeeTogo />}
             title='The Perfect Coffee'
             description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, magni!'
             align='left'
