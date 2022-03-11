@@ -6,6 +6,7 @@ import { About } from '../components/About';
 import { PopularCoffee } from '../components/PopularCoffee';
 import { FollowInstagram } from '../components/FollowIntagram';
 import { Newsletter } from '../components/Newsletter';
+import { Footer } from '../components/Footer';
 
 const Home: NextPage = () => {
   return (
@@ -21,6 +22,8 @@ const Home: NextPage = () => {
         <FollowInstagram />
         <Newsletter />
       </main>
+
+      <Footer />
     </>
   )
 }
