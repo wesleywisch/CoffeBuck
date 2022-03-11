@@ -5,6 +5,7 @@ import { HomeHero } from '../components/HomeHero';
 import { About } from '../components/About';
 import { PopularCoffee } from '../components/PopularCoffee';
 import { FollowInstagram } from '../components/FollowIntagram';
+import { Newsletter } from '../components/Newsletter';
 
 const Home: NextPage = () => {
   return (
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
         <About />
         <PopularCoffee />
         <FollowInstagram />
+        <Newsletter />
       </main>
     </>
   )
