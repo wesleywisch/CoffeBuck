@@ -15,26 +15,22 @@ export const PopularCoffeeContainer = styled.section`
   }
   
   > div {
+    max-width: 1600px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0 auto;
     gap: 2rem 1rem;
-    padding: 0 26rem;
+  }
 
-    @media screen and (max-width: 2340px) {
-      padding: 0 20rem;
-    }
-
-    @media screen and (max-width: 2140px) {
-      padding: 0 14rem;
-    }
-
-    @media screen and (max-width: 1940px) {
-      padding: 0 4rem;
-    }
-
-    @media screen and (max-width: 1640px) {
-      padding: 0;
-    }
+  button.leadMore{
+    border: none;
+    padding: .5rem 1rem;
+    color: #fff;
+    font-weight: 300;
+    background: #B87A43;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
   }
 `;

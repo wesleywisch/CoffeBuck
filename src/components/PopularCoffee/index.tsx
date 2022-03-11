@@ -23,6 +23,8 @@ export function PopularCoffee() {
           />
         ))}
       </div>
+
+      <button className='leadMore'>Lead more</button>
     </PopularCoffeeContainer>
   )
 }

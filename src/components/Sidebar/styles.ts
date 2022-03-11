@@ -47,10 +47,10 @@ export const SidebarMenu = styled.ul`
   li {
     display: flex;
     justify-content: center;
-  }
 
-  li a{
-    width: 14%;
+    a {
+      width: 14%;
+    }
   }
   
   @media screen and (max-width: 480px) {
