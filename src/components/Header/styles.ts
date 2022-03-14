@@ -12,6 +12,9 @@ export const HeaderContainer = styled.header`
   align-items: center;
   height: 5rem;
   background: #363636;
+  position: sticky;
+  top: 0;
+  z-index: 9;
 
   @media screen and (max-width: 1320px) {
     grid-template-columns: 1fr 1fr 1fr;
