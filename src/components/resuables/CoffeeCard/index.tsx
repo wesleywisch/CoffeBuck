@@ -4,6 +4,8 @@ import { BsFillBagCheckFill } from 'react-icons/bs';
 import { AiFillStar, AiOutlineStar } from 'react-icons/ai'; // full e empty
 import { ImStarHalf } from 'react-icons/im'; // star half
 
+import { useCart } from '../../../hooks/useCart';
+
 type CoffeeCardProps = {
   id: number;
   news: boolean;
@@ -15,9 +17,10 @@ type CoffeeCardProps = {
 }
 
 export function CoffeeCard({ id, image, ml, news, price, stars, title }: CoffeeCardProps) {
+  const { addProduct } = useCart();
 
   function handleAddCar(id: number) {
-    console.log(id);
+    addProduct(id);
   }
 
   // 0 é o valor para a estrela vazia, 1 é o valor para meia e 2 é para a estrela cheia.

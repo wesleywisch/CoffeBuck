@@ -6,7 +6,8 @@ export const popularCoffee = [
     "image": "https://gocoffee.com.br/wp-content/uploads/2019/05/avela-sombra.png",
     "ml": 300,
     "stars": 4,
-    "price": 12.5
+    "price": 22.5,
+    "amount": 0,
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@ export const popularCoffee = [
     "image": "https://gocoffee.com.br/wp-content/uploads/2019/05/avela-sombra.png",
     "ml": 300,
     "stars": 4.1,
-    "price": 12.5
+    "price": 32.5,
+    "amount": 0,
   },
   {
     "id": 3,
@@ -24,7 +26,8 @@ export const popularCoffee = [
     "image": "https://gocoffee.com.br/wp-content/uploads/2019/05/avela-sombra.png",
     "ml": 300,
     "stars": 3,
-    "price": 12.5
+    "price": 12.5,
+    "amount": 0,
   },
   {
     "id": 4,
@@ -33,7 +36,8 @@ export const popularCoffee = [
     "image": "https://gocoffee.com.br/wp-content/uploads/2019/05/avela-sombra.png",
     "ml": 300,
     "stars": 1,
-    "price": 12.5
+    "price": 14.5,
+    "amount": 0,
   },
   {
     "id": 5,
@@ -42,25 +46,28 @@ export const popularCoffee = [
     "image": "https://gocoffee.com.br/wp-content/uploads/2019/05/avela-sombra.png",
     "ml": 300,
     "stars": 2,
-    "price": 12.5
+    "price": 24.5,
+    "amount": 0,
   },
   {
     "id": 6,
     "news": true,
-    "title": "Coffee Latte",
+    "title": "Coffee 6",
     "image": "https://gocoffee.com.br/wp-content/uploads/2019/05/avela-sombra.png",
     "ml": 300,
     "stars": 4.3,
-    "price": 12.5
+    "price": 60.5,
+    "amount": 0,
   },
   {
     "id": 7,
     "news": true,
-    "title": "Coffee Latte",
+    "title": "Coffee 7",
     "image": "https://gocoffee.com.br/wp-content/uploads/2019/05/avela-sombra.png",
     "ml": 300,
     "stars": 4.3,
-    "price": 12.5
+    "price": 12.5,
+    "amount": 0,
   },
   {
     "id": 8,
@@ -69,7 +76,8 @@ export const popularCoffee = [
     "image": "https://gocoffee.com.br/wp-content/uploads/2019/05/avela-sombra.png",
     "ml": 300,
     "stars": 4.3,
-    "price": 12.5
+    "price": 12.5,
+    "amount": 0,
   },
   {
     "id": 9,
@@ -78,7 +86,8 @@ export const popularCoffee = [
     "image": "https://gocoffee.com.br/wp-content/uploads/2019/05/avela-sombra.png",
     "ml": 300,
     "stars": 4.3,
-    "price": 12.5
+    "price": 12.5,
+    "amount": 0,
   },
   {
     "id": 10,
@@ -87,7 +96,8 @@ export const popularCoffee = [
     "image": "https://gocoffee.com.br/wp-content/uploads/2019/05/avela-sombra.png",
     "ml": 300,
     "stars": 4.3,
-    "price": 12.5
+    "price": 12.5,
+    "amount": 0,
   },
   {
     "id": 11,
@@ -96,7 +106,8 @@ export const popularCoffee = [
     "image": "https://gocoffee.com.br/wp-content/uploads/2019/05/avela-sombra.png",
     "ml": 300,
     "stars": 4.3,
-    "price": 12.5
+    "price": 12.5,
+    "amount": 0,
   },
   {
     "id": 12,
@@ -105,7 +116,8 @@ export const popularCoffee = [
     "image": "https://gocoffee.com.br/wp-content/uploads/2019/05/avela-sombra.png",
     "ml": 300,
     "stars": 4.3,
-    "price": 12.5
+    "price": 12.5,
+    "amount": 0,
   },
   {
     "id": 13,
@@ -114,7 +126,8 @@ export const popularCoffee = [
     "image": "https://gocoffee.com.br/wp-content/uploads/2019/05/avela-sombra.png",
     "ml": 300,
     "stars": 4.3,
-    "price": 12.5
+    "price": 12.5,
+    "amount": 0,
   },
   {
     "id": 14,
@@ -123,7 +136,8 @@ export const popularCoffee = [
     "image": "https://gocoffee.com.br/wp-content/uploads/2019/05/avela-sombra.png",
     "ml": 300,
     "stars": 4.3,
-    "price": 12.5
+    "price": 12.5,
+    "amount": 0,
   },
   {
     "id": 15,
@@ -132,7 +146,8 @@ export const popularCoffee = [
     "image": "https://gocoffee.com.br/wp-content/uploads/2019/05/avela-sombra.png",
     "ml": 300,
     "stars": 4.3,
-    "price": 12.5
+    "price": 12.5,
+    "amount": 0,
   },
   {
     "id": 16,
@@ -141,6 +156,7 @@ export const popularCoffee = [
     "image": "https://gocoffee.com.br/wp-content/uploads/2019/05/avela-sombra.png",
     "ml": 300,
     "stars": 4.3,
-    "price": 12.5
+    "price": 12.5,
+    "amount": 0,
   }
 ]

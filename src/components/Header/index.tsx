@@ -41,7 +41,9 @@ export function Header({ toggle }: HeaderProps) {
       <HeaderIcons>
         <BiSearch />
         <IoMdLogIn />
-        <BsFillBagCheckFill />
+        <Link href='/cart'>
+          <BsFillBagCheckFill />
+        </Link>
       </HeaderIcons>
     </HeaderContainer>
   )
