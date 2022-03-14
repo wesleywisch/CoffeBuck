@@ -10,8 +10,8 @@ import { AboutContainer, Title, Container } from './styles';
 
 export function About() {
   return (
-    <AboutContainer>
-      <Title>Coffe To Build Your Day!</Title>
+    <AboutContainer id='About'>
+      <Title>Coffee To Build Your Day!</Title>
 
       <Container>
         <div className='CardRight'>

@@ -116,6 +116,7 @@ export const NavLinkContainer = styled.li<NavLinkProps>`
     color: ${props => props.theme.colors.text};
     padding-bottom: 10px;
     transition: .5s;
+    cursor: pointer;
 
     ::after {
       content: '';

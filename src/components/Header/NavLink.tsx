@@ -1,6 +1,8 @@
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 
+import { Link as LinkS } from 'react-scroll';
+
 import { NavLinkContainer } from './styles';
 
 type NavLinkProps = {
@@ -25,7 +27,18 @@ export function NavLink({ title, path, toggle, includes = false }: NavLinkProps)
 
   return (
     <NavLinkContainer isActive={isActive} onClick={toggle}>
-      <Link href={path}>{title}</Link>
+      {title.includes('Home') || title.includes('Coffees') ? (
+        <Link href={path}>{title}</Link>
+      ) : (
+        <LinkS
+          to={path}
+          href={`#${path}`}
+          spy={true}
+          smooth={true} 
+          offset={-80} 
+          duration={800}
+        >{title}</LinkS>
+      )}
     </NavLinkContainer>
   );
 }

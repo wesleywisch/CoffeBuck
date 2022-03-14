@@ -4,7 +4,7 @@ import { FooterContainer } from './styles';
 
 export function Footer() {
   return (
-    <FooterContainer>
+    <FooterContainer id="Contact">
       <div className="containerFooter">
         <div>
           <h3>About Us</h3>

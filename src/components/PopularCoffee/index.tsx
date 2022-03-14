@@ -6,7 +6,7 @@ import { PopularCoffeeContainer } from './styles';
 
 export function PopularCoffee() {
   return (
-    <PopularCoffeeContainer>
+    <PopularCoffeeContainer id="Coffees">
       <h2>Our most popular coffee</h2>
 
       <div>

@@ -17,9 +17,11 @@ export function Header({ toggle }: HeaderProps) {
   return (
     <HeaderContainer>
       <HeaderLogo>
-        <Link href='/'>
-          <h1>CoffeeBuck</h1>
-        </Link>
+        <h1>
+          <Link href='/'>
+            CoffeeBuck
+          </Link>
+        </h1>
       </HeaderLogo>
 
       <MobileIcon onClick={toggle}>
@@ -29,10 +31,10 @@ export function Header({ toggle }: HeaderProps) {
       <HeaderNav>
         <ul>
           <NavLink title='Home' path='/' />
-          <NavLink title='About' path='/' />
-          <NavLink title='Pages' path='/' />
-          <NavLink title='Services' path='/' />
-          <NavLink title='Contact' path='/' />
+          <NavLink title='About' path='About' />
+          <NavLink title='Coffees' path='/coffees' />
+          <NavLink title='Services' path='Coffees' />
+          <NavLink title='Contact' path='Contact' />
         </ul>
       </HeaderNav>
 
