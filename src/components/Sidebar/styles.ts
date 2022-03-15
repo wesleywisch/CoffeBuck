@@ -62,8 +62,28 @@ export const SidebarIcons = styled.div`
   display: flex;
   height: 100%;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 1rem;
   color: ${props => props.theme.colors.text};
   font-size: 1.2rem;
+
+  div.divBusca {
+    background-color:#2F4F4F;
+    border: solid 1px;
+    border-radius: .8rem;
+    width: 10rem;
+    padding: .2rem .3rem;
+    display: flex;
+    align-items: center;
+
+    input {
+      width:100%;
+      height:100%;
+      background-color: transparent;
+      font-size: 1.2rem;
+      border: none;
+      outline: none;
+      padding: .2rem .3rem;
+    }
+  }
 `;

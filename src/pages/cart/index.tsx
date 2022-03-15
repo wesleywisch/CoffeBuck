@@ -8,7 +8,7 @@ import { useCart } from '../../hooks/useCart';
 import { formatPrice } from '../../util/format';
 import { Container, ProductTable, Total } from './styles';
 
-interface Product {
+type Product = {
   id: number;
   news: boolean;
   title: string;

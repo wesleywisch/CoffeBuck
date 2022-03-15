@@ -32,7 +32,17 @@ type CartContextData = {
 const CartContext = createContext<CartContextData>({} as CartContextData);
 
 export function CartProvider({ children }: CartProviderProps) {
-  const [cart, setCart] = useState<Product[]>([]);
+  const [cart, setCart] = useState<Product[]>(() => {
+    if (typeof window !== 'undefined') {
+      const storagedCart = localStorage.getItem('@Coffees');
+
+      if (storagedCart) {
+        return JSON.parse(storagedCart);
+      }
+    }
+
+    return [];
+  });
 
   const addProduct = async (productId: number) => {
     try {
@@ -41,15 +51,15 @@ export function CartProvider({ children }: CartProviderProps) {
       const updatedCart = [...cart];
 
       // Verificar se o produto existe no carrinho
-      const productsExists = updatedCart.find( product => product.id === productId);
+      const productsExists = updatedCart.find(product => product.id === productId);
 
       // Essa variavel contem a quantidade de estoque dos produtos;
       const currentAmount = productsExists ? productsExists.amount : 0;
       const amount = currentAmount + 1;
 
-      if(productsExists){
+      if (productsExists) {
         productsExists.amount = amount;
-      }else{
+      } else {
         const newProduct = {
           ...allProduct,
           amount: 1
@@ -59,7 +69,10 @@ export function CartProvider({ children }: CartProviderProps) {
       }
 
       setCart(updatedCart);
-      console.log('Produto adicionado');
+
+      if (typeof window !== "undefined") {
+        localStorage.setItem('@Coffees', JSON.stringify(updatedCart));
+      }
 
     } catch {
       console.log('Erro na adição do produto');
@@ -71,11 +84,14 @@ export function CartProvider({ children }: CartProviderProps) {
       const updatedCart = [...cart];
       const productIndex = updatedCart.findIndex(product => product.id === productId);
 
-      if(productIndex >= 0){
+      if (productIndex >= 0) {
         updatedCart.splice(productIndex, 1);
         setCart(updatedCart);
 
-      }else{
+        if (typeof window !== 'undefined') {
+          localStorage.setItem('@Coffees', JSON.stringify(updatedCart))
+        }
+      } else {
         throw Error();
       }
     } catch {
@@ -88,17 +104,21 @@ export function CartProvider({ children }: CartProviderProps) {
     amount,
   }: UpdateProductAmount) => {
     try {
-      if(amount <= 0){
+      if (amount <= 0) {
         return;
       }
 
       const updatedCart = [...cart];
       const productExists = updatedCart.find(product => product.id === productId);
 
-      if(productExists){
+      if (productExists) {
         productExists.amount = amount;
         setCart(updatedCart);
-      }else{
+
+        if (typeof window !== 'undefined') {
+          localStorage.setItem('@Coffees', JSON.stringify(updatedCart))
+        }
+      } else {
         throw Error();
       }
 

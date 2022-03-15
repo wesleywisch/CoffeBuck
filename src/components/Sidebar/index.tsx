@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { NavLink } from '../Header/NavLink';
 
 import { BiSearch } from 'react-icons/bi';
@@ -37,9 +38,14 @@ export function Sidebar({ isOpen, toggle }: SidebarProps) {
       </SidebarWrapper>
 
       <SidebarIcons>
-        <BiSearch />
+        <div className="divBusca">
+          <input type="text" placeholder="Buscar..." />
+          <BiSearch className='searchButton' />
+        </div>
         <IoMdLogIn />
-        <BsFillBagCheckFill />
+        <Link href='/cart'>
+          <BsFillBagCheckFill />
+        </Link>
       </SidebarIcons>
     </SidebarContainer>
   );
