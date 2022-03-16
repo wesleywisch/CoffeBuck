@@ -27,6 +27,7 @@ type CartContextData = {
   addProduct: (productId: number) => Promise<void>;
   removeProduct: (productId: number) => void;
   updateProductAmount: ({ productId, amount }: UpdateProductAmount) => void;
+  finalizeOrder: () => void;
 }
 
 const CartContext = createContext<CartContextData>({} as CartContextData);
@@ -127,9 +128,23 @@ export function CartProvider({ children }: CartProviderProps) {
     }
   };
 
+  const finalizeOrder = () => {
+    try {
+      const updatedCart = [...cart];
+      const removeAllProducts = updatedCart= [];
+      setCart(removeAllProducts);
+
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('@Coffees', JSON.stringify(removeAllProducts))
+      }
+    } catch {
+      console.log('Erro ao finalizar a compra');
+    }
+  }
+
   return (
     <CartContext.Provider
-      value={{ cart, addProduct, removeProduct, updateProductAmount }}
+      value={{ cart, addProduct, removeProduct, updateProductAmount, finalizeOrder }}
     >
       {children}
     </CartContext.Provider>

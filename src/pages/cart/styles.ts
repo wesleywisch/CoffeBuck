@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   padding: 30px;
-  background: #fff;
   border-radius: 4px;
   
   div.Finalizar {
@@ -26,6 +25,23 @@ export const Container = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 540px){
+    width: 280px;
+    margin: 0 auto;
+
+    div.Finalizar {
+      flex-direction: column-reverse;
+
+      button {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 460px) {
+    padding: 10px;
+  }
 `;
 
 export const ProductTable = styled.table`
@@ -40,6 +56,14 @@ export const ProductTable = styled.table`
   tbody td {
     padding: 12px;
     border-bottom: 1px solid #eee;
+    
+    strong {
+      color: #f5f5f5;
+    }
+
+    span {
+      color: #ccc;
+    }
   }
 
   img {
@@ -95,6 +119,38 @@ export const ProductTable = styled.table`
       }
     }
   }
+
+  @media screen and (max-width: 640px) {
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  @media screen and (max-width: 540px) {
+    thead tr{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    tbody tr {
+      background: #363636;
+      margin-top: 1rem;
+
+      td{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border-bottom: none;
+
+        button.buttonBottom {
+          border-bottom: 1px solid #eee;
+        }
+      }
+    }
+  }
 `;
 
 export const Total = styled.div`
@@ -108,6 +164,7 @@ export const Total = styled.div`
 
   strong {
     font-size: 28px;
+    color: #f2f2f2;
     margin-left: 5px;
   }
 `;

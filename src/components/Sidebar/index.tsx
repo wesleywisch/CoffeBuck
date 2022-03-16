@@ -38,10 +38,6 @@ export function Sidebar({ isOpen, toggle }: SidebarProps) {
       </SidebarWrapper>
 
       <SidebarIcons>
-        <div className="divBusca">
-          <input type="text" placeholder="Buscar..." />
-          <BiSearch className='searchButton' />
-        </div>
         <IoMdLogIn />
         <Link href='/cart'>
           <BsFillBagCheckFill />

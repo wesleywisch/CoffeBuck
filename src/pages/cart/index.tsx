@@ -20,7 +20,7 @@ type Product = {
 }
 
 export default function Cart() {
-  const { cart, removeProduct, updateProductAmount } = useCart();
+  const { cart, removeProduct, updateProductAmount, finalizeOrder } = useCart();
 
   const cartFormatted = cart.map(product => ({
     ...product,
@@ -73,7 +73,6 @@ export default function Cart() {
                 <div>
                   <button
                     type="button"
-                    data-testid="decrement-product"
                     disabled={product.amount <= 1}
                     onClick={() => handleProductDecrement(product)}
                   >
@@ -81,13 +80,11 @@ export default function Cart() {
                   </button>
                   <input
                     type="text"
-                    data-testid="product-amount"
                     readOnly
                     value={product.amount}
                   />
                   <button
                     type="button"
-                    data-testid="increment-product"
                     onClick={() => handleProductIncrement(product)}
                   >
                     <MdAddCircleOutline size={20} />
@@ -99,8 +96,8 @@ export default function Cart() {
               </td>
               <td>
                 <button
+                className='buttonBottom'
                   type="button"
-                  data-testid="remove-product"
                   onClick={() => handleRemoveProduct(product.id)}
                 >
                   <MdDelete size={20} />
@@ -112,7 +109,7 @@ export default function Cart() {
       </ProductTable>
 
       <div className='Finalizar'>
-        <button type="button">Finalizar pedido</button>
+        <button type="button" onClick={finalizeOrder}>Finalizar pedido</button>
 
         <Total>
           <span>TOTAL</span>
